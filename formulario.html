@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!--Formulario-->
+    <h2  align="center">Formulario </h2>
+    <form action="arquivo.sql" method="post">
+        <p>Nome: <input type="text"name= "Nome" 
+            placeholder="Escreva seu nome"size="50"></p>
+            <p>Telefone: <input type="tel" placeholder="DDD-00000-0000" maxlength="11"/></p>
+            <p>Data de nascimento <input type="date"></p>
+            <p>Senha: <input type="password"maxlength= "8"/></p>
+            <p>Email: <input type="email"></p>
+            <P>Idade: <input type="number">/</P>
+            <p> Comentarios:
+                <textarea rows="4" cols="8"></textarea>
+            </p>
+            <!--Estrutura de Opçoes-->
+            <p> Estado de Nascimento:
+                <br/> 
+                <input type="radio" name="Estados" value="DF"> DF
+                <br/>
+                <input type="radio" name="Estados" value="RR"> RR
+                <br/>
+                <input type="radio" name="Estados" value="PR"> PR
+                <br/>
+                
+            </p> <!--Estrutura de seleçao-->
+            <p>Países:
+                <select>
+                    <option></option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                </select>              
+            </p>
+            <!--Estrutura do checkbox e Envio--> 
+            <p><input type="checkbox">aceito fazer parte da ceita do html!!</p>
+            <p><input type="checkbox"></p>
+            <p><input type="checkbox"></p>
+            <input type="reset"name=reset>
+            <input type="submit"name=enviar>
+            <br>
+            <br>
+
+        </form>
+        <!--Fieldset-->
+        <fieldset>
+            <legend align="center">Dados Pessoais</legend>
+            <label>Nome: <input type="text" name="texto"></label>
+            <br>
+            <br>
+            <label>CPF: <input type="text"name="CPF"></label>
+        </fieldset>
+
+
+    </form>
+</body>
+   
+</html>
